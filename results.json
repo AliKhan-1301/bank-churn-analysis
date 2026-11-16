@@ -1,0 +1,220 @@
+{
+  "customers": 10000,
+  "churned": 2037,
+  "churn_rate": 20.37,
+  "by_category": {
+    "Geography": {
+      "churn_rate_pct": {
+        "France": 16.2,
+        "Germany": 32.4,
+        "Spain": 16.7
+      },
+      "customers": {
+        "France": 5014,
+        "Germany": 2509,
+        "Spain": 2477
+      },
+      "chi2": 301.3,
+      "dof": 2,
+      "p": 3.83e-66,
+      "cramers_v": 0.174
+    },
+    "Gender": {
+      "churn_rate_pct": {
+        "Female": 25.1,
+        "Male": 16.5
+      },
+      "customers": {
+        "Female": 4543,
+        "Male": 5457
+      },
+      "chi2": 112.9,
+      "dof": 1,
+      "p": 2.25e-26,
+      "cramers_v": 0.106
+    },
+    "IsActiveMember": {
+      "churn_rate_pct": {
+        "0": 26.9,
+        "1": 14.3
+      },
+      "customers": {
+        "0": 4849,
+        "1": 5151
+      },
+      "chi2": 243.0,
+      "dof": 1,
+      "p": 8.79e-55,
+      "cramers_v": 0.156
+    },
+    "HasCrCard": {
+      "churn_rate_pct": {
+        "0": 20.8,
+        "1": 20.2
+      },
+      "customers": {
+        "0": 2945,
+        "1": 7055
+      },
+      "chi2": 0.5,
+      "dof": 1,
+      "p": 0.492,
+      "cramers_v": 0.007
+    },
+    "NumOfProducts": {
+      "churn_rate_pct": {
+        "1": 27.7,
+        "2": 7.6,
+        "3": 82.7,
+        "4": 100.0
+      },
+      "customers": {
+        "1": 5084,
+        "2": 4590,
+        "3": 266,
+        "4": 60
+      },
+      "chi2": 1503.6,
+      "dof": 3,
+      "p": 0.0,
+      "cramers_v": 0.388
+    },
+    "AgeBand": {
+      "churn_rate_pct": {
+        "18-30": 7.5,
+        "31-40": 12.1,
+        "41-50": 34.0,
+        "51-60": 56.2,
+        "61+": 24.8
+      },
+      "customers": {
+        "18-30": 1968,
+        "31-40": 4451,
+        "41-50": 2320,
+        "51-60": 797,
+        "61+": 464
+      },
+      "chi2": 1289.7,
+      "dof": 4,
+      "p": 5.7e-278,
+      "cramers_v": 0.359
+    }
+  },
+  "numeric": {
+    "Age": {
+      "mean_churned": 44.84,
+      "mean_retained": 37.41,
+      "t": 30.42,
+      "p": 4.71e-179,
+      "cohens_d": 0.739
+    },
+    "Balance": {
+      "mean_churned": 91108.54,
+      "mean_retained": 72745.3,
+      "t": 12.47,
+      "p": 6.32e-35,
+      "cohens_d": 0.296
+    },
+    "CreditScore": {
+      "mean_churned": 645.35,
+      "mean_retained": 651.85,
+      "t": -2.63,
+      "p": 0.00846,
+      "cohens_d": -0.067
+    },
+    "EstimatedSalary": {
+      "mean_churned": 101465.68,
+      "mean_retained": 99738.39,
+      "t": 1.2,
+      "p": 0.229,
+      "cohens_d": 0.03
+    },
+    "Tenure": {
+      "mean_churned": 4.93,
+      "mean_retained": 5.03,
+      "t": -1.38,
+      "p": 0.166,
+      "cohens_d": -0.035
+    }
+  },
+  "anova": {
+    "Age": {
+      "F": 12.11,
+      "p": 5.61e-06,
+      "means": {
+        "France": 38.51,
+        "Germany": 39.77,
+        "Spain": 38.89
+      }
+    },
+    "Balance": {
+      "F": 958.43,
+      "p": 0.0,
+      "means": {
+        "France": 62092.64,
+        "Germany": 119730.12,
+        "Spain": 61818.15
+      }
+    }
+  },
+  "logit": {
+    "pseudo_r2": 0.153,
+    "terms": {
+      "CreditScore": {
+        "odds_ratio": 0.94,
+        "z": -2.38,
+        "p": 0.0171
+      },
+      "Age": {
+        "odds_ratio": 2.14,
+        "z": 28.23,
+        "p": 2.52e-175
+      },
+      "Tenure": {
+        "odds_ratio": 0.95,
+        "z": -1.7,
+        "p": 0.0882
+      },
+      "Balance": {
+        "odds_ratio": 1.18,
+        "z": 5.13,
+        "p": 2.92e-07
+      },
+      "NumOfProducts": {
+        "odds_ratio": 0.94,
+        "z": -2.15,
+        "p": 0.0312
+      },
+      "EstimatedSalary": {
+        "odds_ratio": 1.03,
+        "z": 1.01,
+        "p": 0.31
+      },
+      "Female": {
+        "odds_ratio": 1.7,
+        "z": 9.7,
+        "p": 3.04e-22
+      },
+      "Germany": {
+        "odds_ratio": 2.17,
+        "z": 11.45,
+        "p": 2.41e-30
+      },
+      "Spain": {
+        "odds_ratio": 1.04,
+        "z": 0.5,
+        "p": 0.618
+      },
+      "IsActiveMember": {
+        "odds_ratio": 0.34,
+        "z": -18.64,
+        "p": 1.43e-77
+      },
+      "HasCrCard": {
+        "odds_ratio": 0.96,
+        "z": -0.75,
+        "p": 0.452
+      }
+    }
+  }
+}
